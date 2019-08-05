@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首都机场温湿度环境参数无线采集传输系统</title>
+    <link rel="icon" href="img/logo1_03.png"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="js/time/jquery-ui.css"/>
+    <link rel="stylesheet" href="js/time/admin.css"/>
+    <style>
+        body {
+            background-position: 0 0;
+
+        }
+       .windo{
+           cursor: pointer;
+       }
+        @media screen and (max-height: 750px) {
+            body {
+                background-size: 100% 750px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div class='con header'>
+    <div class='loginBar'>
+        <span id='name'>name</span>
+       <!-- <i class='iconfontDelete'>&#xe64b;</i>-->
+        <b>|</b>
+        <i class='iconfontDelete' id='sign'>&#xe617;</i>
+    </div>
+</div>
+<div class='logoBar con'><h1></h1></div>
+<div class='main con'>
+    <div class='main-header'>
+        <i class='windo'>温湿度采集系统></i><span id='device'>设备1</span>
+        <div class='refresh'> 数据刷新 :<i> 2分钟前</i></div>
+    </div>
+    <div class='location'>安装位置 :<span id='location'> 126检票口门厅</span></div>
+    <div id='echarts'>
+
+    </div>
+    <div class='handlebar'>
+        <span id='leftMove'>左移</span><span id='rightMove'>右移</span>
+    </div>
+    <div class='border'>
+        <ul>
+            <li class='actionBar'>
+                <span class='marginL'> 选择项目名称 :</span>
+                <div class='project'>
+                    <span class='sel'>温度</span><i class='iconfontDelete'> &#xe659;</i>
+                    <ul id='projectSelect'>
+                        <li>温度</li>
+                        <li>湿度</li>
+                    </ul>
+                </div>
+                <span class='marginL'>选择时间 : </span>
+                <div class='time'>
+                    <input id='timeSel' placeholder='点击选择时间'/>~
+                    <input id='timeSele' placeholder='点击选择时间'/>
+
+                    <!-- <span>2016-10-12 17:00</span>--><!--<i class='iconfontDelete'>&#xe659;</i>-->
+                    <!--<ul id='timeSelect'>
+                        <li>2016-10-12 17:00</li>
+                    </ul>-->
+                </div>
+                <div id='query'>查询</div>
+                <!--<div id='export'>导出</div>-->
+            </li>
+            <li class='titleName'>
+                <span>项目名称</span>
+                <span>值</span>
+                <span>采集时间</span>
+            </li>
+        </ul>
+        <ol id='container'>
+            <!-- <li class='dataList'>
+                 <span>温度</span>
+                 <span>25℃</span>
+                 <span>2016-10-12 17:45:58 </span>
+             </li>-->
+        </ol>
+    </div>
+
+
+</div>
+<script src='js/jquery.min.js'></script>
+<script src='js/time/jquery.ui.datepicker-zh-CN.js'></script>
+<script src='js/time/jquery-ui-1.10.4.custom.min.js'></script>
+<script src='js/time/jquery-ui-timepicker-addon.js'></script>
+<script src='js/time/jquery-ui-timepicker-zh-CN.js'></script>
+<script src='js/moment.min.js'></script>
+<script src='js/echarts.common.min.js'></script>
+<script src='js/dataList.js'></script>
+<script src='js/public.js'></script>
+<script>
+    $("#timeSel").datetimepicker();
+    $("#timeSele").datetimepicker();
+    $('.windo').on('click',()=>{
+        location.href='data.html'
+    })
+</script>
+</body>
+</html>

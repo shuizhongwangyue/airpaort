@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首都机场温湿度环境参数无线采集传输系统</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="icon" href="img/logo1_03.png"/>
+    <!--<meta http-equiv="refresh" content="20">--><!--20s刷新页面-->
+</head>
+<body>
+<div class='con header'>
+    <div class='loginBar'>
+        <span id='name'>name</span>
+       <!-- <i class='iconfontDelete'>&#xe64b;</i>-->
+        <b>|</b>
+        <i class='iconfontDelete' id='sign'>&#xe617;</i>
+    </div>
+</div>
+<div class='logoBar con'><h1></h1></div>
+<!--<h3>
+    <div> 添加采集器</div>
+</h3>-->
+<div class='bg' id='match'>
+    <script type='text/template' id='matchTemplate'>
+        <%$.each(newData,function(index,item){%>
+        <div class='container'>
+            <div class='blueBlock'>
+                <div class='delete'><!--<i class="iconfontDelete">&#xe69d;</i>--></div>
+                <div class='more'>...</div>
+            </div>
+            <div class='whiteBlock'>
+                <h4>设备<%=item.name%></h4>
+                <div class='group'>
+                    <div><i class="iconfont">&#xe65c;</i></div>
+                    <ul>
+                        <li class='topLi temperature'>--</li>
+                        <li class='bottomLi'>温度</li>
+                    </ul>
+                </div>
+                <div class='group'>
+                    <div><i class="iconfont">&#xe641;</i></div>
+                    <ul>
+                        <li class='topLi humidity'>--</li>
+                        <li class='bottomLi'>湿度</li>
+                    </ul>
+                </div>
+                <div class='group'>
+                    <div><i class="iconfont">&#xe8fa;</i></div>
+                    <ul>
+                        <li class='topLi'>--</li>
+                        <li class='bottomLi'>CO2</li>
+                    </ul>
+                </div>
+                <div class='group'>
+                    <div><i class="iconfont">&#xe640;</i></div>
+                    <ul>
+                        <li class='topLi'>--</li>
+                        <li class='bottomLi'>VOC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <%});%>
+    </script>
+
+</div>
+<div class='con footerBg'>
+    <div class='footer'>
+        <span class='marginR'><b class='iconfontDelete'>&#xe60d;  </b> 上一页</span>
+        第<i>1</i>页,共<i>1</i>页
+        <span class='marginL'>下一页 <b class='iconfontDelete'>  &#xe602;</b></span>
+    </div>
+</div>
+
+<script src='js/jquery.min.js'></script><script src='js/moment.min.js'></script>
+<script src='js/ejs.min.js'></script>
+<script src='js/index.js'></script>
+<script src='js/public.js'></script>
+</body>
+</html>

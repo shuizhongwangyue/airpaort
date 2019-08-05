@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="icon" href="img/logo1_03.png"/>
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .login {
+            background: url("img/bg1.jpg");
+            background-size: 100% 100%;
+            font-size: 14px;
+            padding: 5% 0;
+        }
+
+        h3 {
+            background: url("img/logo.png");
+            background-size: 100% 100%;
+            width: 475px;
+            height: 50px;
+            margin: 0px auto;
+        }
+
+        .block {
+            width: 410px;
+            margin: 20px auto 0;
+            border-radius: 8px;
+            background: #fff;
+            padding-top: 30px;
+        }
+
+        .inputbox {
+            width: 80%;
+            height: 45px;
+            line-height: 45px;
+            margin: 24px auto;
+            border: 1px solid #f1eef2;
+            border-radius: 3px;
+        }
+
+        .inputbox i {
+            display: inline-block;
+            margin: 0px 15px;
+            width: 15px;
+            height: 16px;
+            vertical-align: middle;
+            background: url("img/1-1.png");
+
+        }
+
+        .inputbox .moe {
+            background-position: 0px 16px;
+        }
+
+        .inputbox input {
+            border: none;
+            outline: none;
+        }
+
+        .loginBtn {
+            width: 80%;
+            margin: 0 auto;
+            background: #108cee;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 3px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .supplement {
+            height: 70px;
+            line-height: 70px;
+            color: #666;
+        }
+
+        .firstSpan {
+            margin-left: 60%;
+        }
+        .footer{
+            width: 460px;
+            height: 110px;
+            line-height: 110px;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #959595;
+        }
+        .footer span:nth-child(2){
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class='login'>
+    <h3></h3>
+    <div class='block'>
+        <div class='inputbox'><i></i><input placeholder='请输入用户名' class='username' type='text'></div>
+        <div class='inputbox'><i class='moe'></i><input placeholder='请输入密码' class='password' type='password'></div>
+        <div class='loginBtn'>登录</div>
+        <div class='supplement'><span class='firstSpan'>忘记密码</span><i> | </i><span>注册新账号</span></div>
+    </div>
+</div>
+<div class='footer'>
+    <span>业务咨询电话：010-62637583</span>
+    <span> 技术支持电话：北京华亿创新信息技术有限公司</span>
+</div>
+<script src='js/jquery.min.js'></script>
+<script src='js/index1.js'></script>
+</body>
+</html>
